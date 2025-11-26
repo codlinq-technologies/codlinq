@@ -1,0 +1,63 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #ffffff;
+  color: #2c2c2c;
+}
+
+ */
+
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide scrollbar but reserve space to prevent layout shift */
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  overflow-y: scroll; /* Reserve scrollbar space */
+}
+
+* {
+  scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+
+  /* Light & Dark mode backgrounds */
+  background-color: #ffffff;
+  color: #2c2c2c;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1a1a1a;
+    color: #e5e5e5;
+  }
+}
