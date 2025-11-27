@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Codlinq Technologies - Connect. Create. Conquer.</title>
     <link rel="icon" href="src\assets\favicon.ico" />
+
+<script>
+  // Apply saved theme before React mounts (prevents flicker)
+  (function () {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else if (savedTheme === "light") {
+      document.documentElement.classList.remove("dark");
+    } else {
+      // Use system theme if no preference
+      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        document.documentElement.classList.add("dark");
+      }
+    }
+  })();
+</script>
+
   </head>
   <body class="scroll-smooth bg-white dark:bg-[#1a1a1a] transition-colors duration-500">
     <div id="root"></div>
