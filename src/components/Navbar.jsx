@@ -10,6 +10,7 @@ const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
   const { darkMode, toggleDarkMode } = useDarkTheme();
   const toggleNav = () => setNavOpen(!navOpen);
+  
   let links = [];
 
   if (getCurrentPath() === "/e-commerce") {
@@ -101,18 +102,21 @@ const Navbar = () => {
         </ul>
 
         {/* Mobile Hamburger */}
-        <div className="md:hidden flex items-center gap-2">
-          <button
-            onClick={toggleDarkMode}
-            className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition"
-          >
-            {darkMode ? <FiSun size={18} /> : <FiMoon size={18} />}
-          </button>
+<div className="md:hidden flex items-center gap-3 text-gray-800 dark:text-gray-200">
+  <button
+    onClick={toggleDarkMode}
+    className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition flex items-center justify-center"
+  >
+    {darkMode ? <FiSun size={20} /> : <FiMoon size={20} />}
+  </button>
 
-          <button onClick={toggleNav}>
-            {navOpen ? <HiX size={28} /> : <HiMenu size={28} />}
-          </button>
-        </div>
+  <button
+    onClick={toggleNav}
+    className="p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition flex items-center justify-center"
+  >
+    {navOpen ? <HiX size={28} /> : <HiMenu size={28} />}
+  </button>
+</div>
       </div>
 
       {/* Mobile Menu */}
