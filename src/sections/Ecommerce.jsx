@@ -1,6 +1,10 @@
 import React from "react";
 import { FaStar, FaWhatsapp } from "react-icons/fa";
 import ecomHero from "../assets/ecomHero.webp";
+import flipkartLogo from "../assets/flipkart.webp";
+import amazonLogo from "../assets/amazon.webp";
+import meeshoLogo from "../assets/meesho.webp";
+import subHero from "../assets/subHero.webp";
 
 const Ecommerce = () => {
   return (
@@ -100,17 +104,17 @@ const Ecommerce = () => {
           {/* Service Cards */}
           {[
             {
-              img: "src/assets/flipkart.webp",
+              img: {flipkartLogo},
               title: "Flipkart Account Management",
               text: "Optimize listings, improve rankings & boost sales with expert management.",
             },
             {
-              img: "src/assets/amazon.webp",
+              img: {amazonLogo},
               title: "Amazon Account Management",
               text: "Listing optimization, ads setup, SEO, branding & end-to-end management.",
             },
             {
-              img: "src/assets/meesho.webp",
+              img: {meeshoLogo},
               title: "Meesho Account Management",
               text: "Grow faster with strategic product management & performance optimization.",
             }
@@ -162,7 +166,7 @@ const Ecommerce = () => {
 
           <div className="flex-1">
             <img
-              src="/src/assets/H2.webp"
+              src= {subHero}
               className="w-full drop-shadow-lg"
               alt="Service Preview"
             />
