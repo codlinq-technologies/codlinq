@@ -17,16 +17,7 @@ const Navbar = () => {
     links.push(
       { name: "Home", href: "/" },
       { name: "About", href: "/#about" },
-      {
-        name: "Services",
-        href: "/#service",
-        nestedLinks: [
-          {
-            name: "E-commerce",
-            href: "",
-          },
-        ],
-      },
+      { name: "Services", href: "/#service",},
       { name: "Projects", href: "/#projects" },
       { name: "Contact", href: "/#contact" }
     );
@@ -34,16 +25,7 @@ const Navbar = () => {
     links.push(
       { name: "Home", href: "#home" },
       { name: "About", href: "#about" },
-      {
-        name: "Services",
-        href: "#services",
-        nestedLinks: [
-          {
-            name: "E-commerce",
-            href: "/e-commerce",
-          },
-        ],
-      },
+      { name: "Services", href: "#services",},
       { name: "Projects", href: "#projects" },
       { name: "Contact", href: "#contact" }
     );
