@@ -104,17 +104,17 @@ const Ecommerce = () => {
           {/* Service Cards */}
           {[
             {
-              img: {flipkartLogo},
+              src: {flipkartLogo},
               title: "Flipkart Account Management",
               text: "Optimize listings, improve rankings & boost sales with expert management.",
             },
             {
-              img: {amazonLogo},
+              src: {amazonLogo},
               title: "Amazon Account Management",
               text: "Listing optimization, ads setup, SEO, branding & end-to-end management.",
             },
             {
-              img: {meeshoLogo},
+              src: {meeshoLogo},
               title: "Meesho Account Management",
               text: "Grow faster with strategic product management & performance optimization.",
             }
