@@ -121,10 +121,10 @@ const Home = () => {
         </a>
 
         <a
-          href="#projects"
+          href="e-commerce"
           className="flex items-center justify-center px-6 py-3 rounded-lg bg-gray-100 dark:bg-[#1b1b1b] text-gray-800 dark:text-gray-200 font-medium text-base hover:bg-gray-200 dark:hover:bg-[#2b2b2b] transition-colors shadow-sm border border-gray-200 dark:border-gray-700"
         >
-          View Our Work
+          E-Commerce Services
         </a>
       </motion.div>
     </section>
