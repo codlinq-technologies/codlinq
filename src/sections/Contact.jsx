@@ -312,7 +312,7 @@ const Contact = () => {
                                       Branch
                                     </p>
                                     <p className="text-lg font-medium leading-relaxed">
-                                      Gwalior, Madhya Pradesh  474001
+                                      Gwalior, Madhya Pradesh  474006
                                     </p>
                                   </div>
                 </div>

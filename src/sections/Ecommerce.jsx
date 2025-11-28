@@ -52,7 +52,7 @@ const Ecommerce = () => {
           {/* Right Image */}
           <div className="flex justify-center items-center">
             <img
-              src="/src/assets/ecomHero.webp"
+              src="/src/assets/ecom.png"
               alt="Ecommerce Growth"
               className="
                 w-[90%]
