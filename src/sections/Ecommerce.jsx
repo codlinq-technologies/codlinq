@@ -1,5 +1,6 @@
 import React from "react";
 import { FaStar, FaWhatsapp } from "react-icons/fa";
+import ecomHero from "../assets/ecomHero.webp";
 
 const Ecommerce = () => {
   return (
@@ -52,7 +53,7 @@ const Ecommerce = () => {
           {/* Right Image */}
           <div className="flex justify-center items-center">
             <img
-              src="/src/assets/ecom.png"
+              src={ecomHero}
               alt="Ecommerce Growth"
               className="
                 w-[90%]
