@@ -103,37 +103,38 @@ const Ecommerce = () => {
 
           {/* Service Cards */}
           {[
-            {
-              src: flipkartLogo,
-              title: "Flipkart Account Management",
-              text: "Optimize listings, improve rankings & boost sales with expert management.",
-            },
-            {
-              src: amazonLogo,
-              title: "Amazon Account Management",
-              text: "Listing optimization, ads setup, SEO, branding & end-to-end management.",
-            },
-            {
-              src: meeshoLogo,
-              title: "Meesho Account Management",
-              text: "Grow faster with strategic product management & performance optimization.",
-            }
-          ].map((card, i) => (
-            <div key={i} className="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition">
-              <div className="h-44 md:h-48 w-full relative">
-                <img
-                  src={card.img}
-                  alt={card.title}
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-                />
-              </div>
+  {
+    src: flipkartLogo,
+    title: "Flipkart Account Management",
+    text: "Optimize listings, improve rankings & boost sales with expert management.",
+  },
+  {
+    src: amazonLogo,
+    title: "Amazon Account Management",
+    text: "Listing optimization, ads setup, SEO, branding & end-to-end management.",
+  },
+  {
+    src: meeshoLogo,
+    title: "Meesho Account Management",
+    text: "Grow faster with strategic product management & performance optimization.",
+  }
+].map((card, i) => (
+  <div key={i} className="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition">
+    <div className="h-44 md:h-48 w-full relative">
+      <img
+        src={card.src}
+        alt={card.title}
+        className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+      />
+    </div>
 
-              <div className="p-6 bg-[#f8f8f8] dark:bg-[#2c2c2c]">
-                <h3 className="font-bold text-xl">{card.title}</h3>
-                <p className="mt-2 text-gray-600 dark:text-gray-300">{card.text}</p>
-              </div>
-            </div>
-          ))}
+    <div className="p-6 bg-[#f8f8f8] dark:bg-[#2c2c2c]">
+      <h3 className="font-bold text-xl">{card.title}</h3>
+      <p className="mt-2 text-gray-600 dark:text-gray-300">{card.text}</p>
+    </div>
+  </div>
+))}
+
 
         </div>
       </section>
