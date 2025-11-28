@@ -104,17 +104,17 @@ const Ecommerce = () => {
           {/* Service Cards */}
           {[
             {
-              src: {flipkartLogo},
+              src: flipkartLogo,
               title: "Flipkart Account Management",
               text: "Optimize listings, improve rankings & boost sales with expert management.",
             },
             {
-              src: {amazonLogo},
+              src: amazonLogo,
               title: "Amazon Account Management",
               text: "Listing optimization, ads setup, SEO, branding & end-to-end management.",
             },
             {
-              src: {meeshoLogo},
+              src: meeshoLogo,
               title: "Meesho Account Management",
               text: "Grow faster with strategic product management & performance optimization.",
             }
@@ -166,7 +166,7 @@ const Ecommerce = () => {
 
           <div className="flex-1">
             <img
-              src= {subHero}
+              src={subHero}
               className="w-full drop-shadow-lg"
               alt="Service Preview"
             />
