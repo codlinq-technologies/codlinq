@@ -8,6 +8,10 @@ import {
   Wrench,
   Palette,
   PenTool,
+  ShoppingBag,
+  Video,
+  Search,
+  Store,
   ChartSpline,
 } from "lucide-react";
 
@@ -29,7 +33,7 @@ const services = [
   },
   {
     icon: <Wrench className="w-8 h-8 text-[#ff7722]" />,
-    title: "Maintenance & Testing",
+    title: "Software Maintenance",
     desc: "Continuous support, optimization, and quality assurance to keep your systems running flawlessly.",
   },
   {
@@ -39,13 +43,28 @@ const services = [
   },
   {
     icon: <PenTool className="w-8 h-8 text-[#ff7722]" />,
-    title: "Graphic & Logo Design",
+    title: "Logo & Graphic Design",
     desc: "Creating strong visual identities that resonate with your audience and stand out from competitors.",
   },
   {
-    icon: <PenTool className="w-8 h-8 text-[#ff7722]" />,
-    title: "E-commerce Account Setup & Management",
-    desc: "Unlock your brand’s full potential with expert Amazon, Flipkart & Meesho account management.",
+    icon: <ShoppingBag className="w-8 h-8 text-[#ff7722]" />,
+    title: "Shopify Development",
+    desc: "Custom Shopify stores tailored for performance, conversions, and brand identity.",
+  },
+  {
+    icon: <Video className="w-8 h-8 text-[#ff7722]" />,
+    title: "Video (UGC & Post-Production)",
+    desc: "High-quality video creation, editing, and UGC content optimized for modern audiences.",
+  },
+  {
+    icon: <Search className="w-8 h-8 text-[#ff7722]" />,
+    title: "SEO & Digital Marketing",
+    desc: "Boosting your online presence with SEO, targeted ads, and performance-driven marketing.",
+  },
+  {
+    icon: <Store className="w-8 h-8 text-[#ff7722]" />,
+    title: "E-commerce Management",
+    desc: "Complete Amazon, Flipkart, and Meesho account management for business growth and profitability.",
   },
 ];
 

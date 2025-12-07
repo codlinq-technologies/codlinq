@@ -59,7 +59,7 @@ const Testimonials = () => {
         {/* Left Content */}
         <div className="md:w-1/2 space-y-4 text-center md:text-left">
           <h3 className="text-4xl font-bold text-gray-100 dark:text-white leading-snug">
-            2k+ Customers gave their{" "}
+            100+ Customers gave their{" "}
             <span className="text-[#1a1a1a] dark:text-[#1a1a1a]">Feedback</span>
           </h3>
 

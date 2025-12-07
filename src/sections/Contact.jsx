@@ -71,7 +71,7 @@ const Contact = () => {
                 <div className="flex items-center gap-4">
                   <Mail className="text-[#ff7722]" size={20} />
                   <span className="text-lg font-medium">
-                    connect.codlinq@gmail.com
+                    connect@codlinq.com
                   </span>
                 </div>
                 <div className="flex items-start gap-4">
@@ -317,7 +317,7 @@ const Contact = () => {
                 </label>
                 <label className="flex items-center gap-2">
                   <input type="checkbox" name="contact_method" value="Virtual Meeting" />
-                  Virtual Meeting
+                  Virtual Meet
                 </label>
               </div>
             </div>

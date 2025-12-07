@@ -5,6 +5,7 @@ import {
   FaInstagram,
   FaLinkedinIn,
   FaYoutube,
+  FaTelegram,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import logoLight from "../assets/logo_light.png";
@@ -111,6 +112,14 @@ const Footer = () => {
                 >
                   <FaYoutube className="text-xl text-[#2c2c2c] dark:text-white" />
                 </a>
+                <a
+                  href="https://t.me/codlinq"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-blue-100 dark:bg-[#333] rounded-full flex items-center justify-center hover:bg-[#ff7722] dark:hover:bg-[#ff7722] transition transform hover:scale-110"
+                >
+                  <FaTelegram className="text-xl text-[#2c2c2c] dark:text-white" />
+                </a>
               </div>
             </div>
           </div>
@@ -154,6 +163,14 @@ const Footer = () => {
                     className="hover:text-[#ff7722] transition"
                   >
                     Contact
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="e-commerce"
+                    className="hover:text-[#ff7722] transition"
+                  >
+                    E-commerce
                   </a>
                 </li>
               </ul>
