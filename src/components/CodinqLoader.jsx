@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import logoLight from "../assets/logo_light.png";
 import logoDark from "../assets/logo_dark.png";
 
-const Loader = () => {
+const CodlinqLoader = () => {
   const [isDarkMode, setIsDarkMode] = useState(
     document.documentElement.classList.contains("dark")
   );
@@ -41,24 +41,21 @@ const Loader = () => {
         }}
       /> */}
 
-
-
-{/* ✅ Logo Switcher */}
-        <a href="#home" className="flex items-center cursor-pointer">
-          {/* Light mode logo */}
-          <img
-            src={logoDark}
-            alt="Logo Dark"
-            className="h-10 w-auto block dark:hidden transition-all duration-300"
-          />
-          {/* Dark mode logo */}
-          <img
-            src={logoLight}
-            alt="Logo Light"
-            className="h-10 w-auto hidden dark:block transition-all duration-300"
-          />
-        </a>
-
+      {/* ✅ Logo Switcher */}
+      <a href="#home" className="flex items-center cursor-pointer">
+        {/* Light mode logo */}
+        <img
+          src={logoDark}
+          alt="Logo Dark"
+          className="h-10 w-auto block dark:hidden transition-all duration-300"
+        />
+        {/* Dark mode logo */}
+        <img
+          src={logoLight}
+          alt="Logo Light"
+          className="h-10 w-auto hidden dark:block transition-all duration-300"
+        />
+      </a>
 
       {/* Subtext */}
       <p
@@ -72,7 +69,7 @@ const Loader = () => {
         Connect. Create. Conquer.
       </p>
 
-      {/* Loader Animation */}
+      {/* CodlinqLoader Animation */}
       <motion.div
         className="mt-6 flex space-x-2"
         initial="hidden"
@@ -108,4 +105,4 @@ const Loader = () => {
   );
 };
 
-export default Loader;
+export default CodlinqLoader;

@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
-import CodlinqLoader from "./components/Loader";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import CodlinqLoader from "./components/CodinqLoader";
 import WhatsAppButton from "./components/WhatsAppButton";
 // import Clients from "./components/Clients";
 
